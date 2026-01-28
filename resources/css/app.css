@@ -1,0 +1,220 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body {
+    background-color: #f4f6f9;
+    color: #1f2937;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+    margin: 0;
+    padding: 100px;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.summary-item {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.summary-item h4 {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.summary-item p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2563eb;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.card.produk {
+    grid-column: 1 / -1;
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+thead th {
+    background: #f1f5f9;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.card table {
+    display: block;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+
+.actions {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+}
+
+.actions button,
+.actions a,
+.btn-edit-produk,
+.btn-hapus {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.actions button,
+.actions a {
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+}
+
+.actions button:hover,
+.actions a:hover {
+    background: #1d4ed8;
+}
+
+/* edit */
+.btn-edit-produk {
+    background: #facc15;
+    color: #1f2937;
+}
+
+.btn-edit-produk:hover {
+    background: #eab308;
+}
+
+.btn-hapus {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-hapus:hover {
+    background: #dc2626;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 420px;
+    border-radius: 8px;
+}
+
+.modal-content h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card table {
+        max-height: 200px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 16px;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actions button,
+    .actions a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
