@@ -30,7 +30,7 @@ Soal test diberikan oleh Fast Print Indonesia dan bersifat confidential.
 
 ## 4. Hasil Pengerjaan
 
-Berikut hasil pengerjaan test (ganti dengan screenshot hasil project jika perlu):
+Berikut hasil pengerjaan test:
 
 ![Hasil Test](Hasil-tes.png)
 
