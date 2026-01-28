@@ -32,7 +32,7 @@ Soal test diberikan oleh Fast Print Indonesia dan bersifat confidential.
 
 Berikut hasil pengerjaan test (ganti dengan screenshot hasil project jika perlu):
 
-![Hasil Test](hasil-test.png)
+![Hasil Test](Hasil-test.png)
 
 ---
 
